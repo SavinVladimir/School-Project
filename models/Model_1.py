@@ -83,5 +83,5 @@ plt.xlabel('Доля ложноположительных исходов', fonts
 plt.ylabel('Доля истинноположительных исходов', fontsize=20)
 
 plt.legend()
-#plt.savefig('Model_1')
+# plt.savefig('Model_1')
 plt.show()
