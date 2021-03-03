@@ -133,18 +133,18 @@ def Tenure_hist():
     y1 = data[data.Exited == 1].Tenure
     y2 = data[data.Exited == 0].Tenure
 
-    plt.hist([y1, y2], rwidth=0.95, color=['#5158DD', '#FC6441'], label=['Покинул банк', 'По прежнему клиент'])
+    plt.hist([y1, y2], rwidth=0.95, color=['#5158DD', '#FC6441'], label=['Покинул банк', 'По-прежнему клиент'])
 
     plt.xlabel('Недвижимость', fontsize=20)
     plt.ylabel('Количество клиентов', fontsize=20)
     plt.title('Визуализация прогнозирования оттока клиентов', fontsize=25)
 
     plt.legend(fontsize=15)
-    # plt.savefig('Tenure_hist')
+    plt.savefig('Tenure_hist')
     plt.show()
 
 
-# Tenure_hist()
+Tenure_hist()
 
 
 def Credit_Score_hist():
@@ -153,18 +153,18 @@ def Credit_Score_hist():
     y1 = data[data.Exited == 1].CreditScore
     y2 = data[data.Exited == 0].CreditScore
 
-    plt.hist([y1, y2], rwidth=0.95, color=['#5158DD', '#FC6441'], label=['Покинул банк', 'По прежнему клиент'])
+    plt.hist([y1, y2], rwidth=0.95, color=['#5158DD', '#FC6441'], label=['Покинул банк', 'По-прежнему клиент'])
 
     plt.xlabel('Ежемесячные платежи', fontsize=20)
     plt.ylabel('Количество клиентов', fontsize=20)
     plt.title('Визуализация прогнозирования оттока клиентов', fontsize=25)
 
     plt.legend(fontsize=15)
-    # plt.savefig('Credit_Score_hist')
+    plt.savefig('Credit_Score_hist')
     plt.show()
 
 
-# Credit_Score_hist()
+Credit_Score_hist()
 
 
 def Age_hist():
@@ -173,18 +173,18 @@ def Age_hist():
     y1 = data[data.Exited == 1].Age
     y2 = data[data.Exited == 0].Age
 
-    plt.hist([y1, y2], rwidth=0.95, color=['#5158DD', '#FC6441'], label=['Покинул банк', 'По прежнему клиент'])
+    plt.hist([y1, y2], rwidth=0.95, color=['#5158DD', '#FC6441'], label=['Покинул банк', 'По-прежнему клиент'])
 
     plt.xlabel('Возраст клиентов', fontsize=20)
     plt.ylabel('Количество клиентов', fontsize=20)
     plt.title('Визуализация прогнозирования оттока клиентов', fontsize=25)
 
     plt.legend(fontsize=15)
-    # plt.savefig('Age_hist')
+    plt.savefig('Age_hist')
     plt.show()
 
 
-# Age_hist()
+Age_hist()
 
 
 def data_processing():
